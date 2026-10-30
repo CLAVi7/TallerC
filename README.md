@@ -25,18 +25,18 @@ No se necesita entrada interactiva. El `main` ejecuta automáticamente los ejemp
 
 Resultados de las pruebas
 
-1. **Intercambio:** `(8, -3)` pasa a `(-3, 8)`.
-2. **Estadísticas:** para `[4, -2, 0, 7, -5]`: suma `4`, mínimo `-5`, máximo `7`, negativos `2`, inverso `-5 7 0 -2 4`.
-3. **Copia independiente:** original `[4, -2, 0, 7, -5]` y copia modificada `[99, -2, 0, 7, -5]`.
-4. **Ordenamiento:** copia ordenada `[-5, -2, 0, 4, 7]`; el original no cambia.
-5. **Búsqueda de pares:** `[-4,-1,0,2,5]` con objetivo `1` encuentra `(-4,5)`; con objetivo `8` no encuentra; `[0,0]` con objetivo `0` encuentra `(0,0)`; `[3]` con objetivo `6` no encuentra; un arreglo de longitud cero tampoco encuentra.
-6. **3Sum:** `[-1,0,1,2,-1,-4]` produce `(-1,-1,2)` y `(-1,0,1)`; `[0,1,1]` ninguna; `[0,0,0]` una; `[0,0,0,0]` una; `[-2,0,0,2,2]` una; longitud menor a 3 produce cero.
-7. **Máximos acumulados:** para `[3,0,2,0,4]`, izquierda `[3,3,3,3,4]`, derecha `[4,4,4,4,4]`.
-8. **Agua atrapada:** `[5]` → `0`; `[0,1,2,3]` → `0`; `[3,2,1,0]` → `0`; `[2,2,2]` → `0`; `[3,0,3]` → `3`; `[3,0,2,0,4]` → `7`; `[4,2,0,3,2,5]` → `9`; `[0,1,0,2,1,0,1,3,2,1,2,1]` → `6`.
+1. Intercambio: `(8, -3)` pasa a `(-3, 8)`.
+2. Estadísticas: para `[4, -2, 0, 7, -5]`: suma `4`, mínimo `-5`, máximo `7`, negativos `2`, inverso `-5 7 0 -2 4`.
+3. Copia independiente: original `[4, -2, 0, 7, -5]` y copia modificada `[99, -2, 0, 7, -5]`.
+4. Ordenamiento: copa ordenada `[-5, -2, 0, 4, 7]`; el original no cambia.
+5. Búsqueda de pares: `[-4,-1,0,2,5]` con objetivo `1` encuentra `(-4,5)`; con objetivo `8` no encuentra; `[0,0]` con objetivo `0` encuentra `(0,0)`; `[3]` con objetivo `6` no encuentra; un arreglo de longitud cero tampoco encuentra.
+6. 3Sum: `[-1,0,1,2,-1,-4]` produce `(-1,-1,2)` y `(-1,0,1)`; `[0,1,1]` ninguna; `[0,0,0]` una; `[0,0,0,0]` una; `[-2,0,0,2,2]` una; longitud menor a 3 produce cero.
+7. Máximos acumulados: para `[3,0,2,0,4]`, izquierda `[3,3,3,3,4]`, derecha `[4,4,4,4,4]`.
+8. Agua atrapada: `[5]` → `0`; `[0,1,2,3]` → `0`; `[3,2,1,0]` → `0`; `[2,2,2]` → `0`; `[3,0,3]` → `3`; `[3,0,2,0,4]` → `7`; `[4,2,0,3,2,5]` → `9`; `[0,1,0,2,1,0,1,3,2,1,2,1]` → `6`.
 
-**Caso propio (agua):** `[2,0,1,0,2]` → `5`. Las posiciones internas retienen `2`, `1` y `2` unidades, respectivamente, porque están limitadas por columnas de altura 2 en ambos extremos: `2 + 1 + 2 = 5`.
+Caso propio (agua): `[2,0,1,0,2]` → `5`. Las posiciones internas retienen `2`, `1` y `2` unidades, respectivamente, porque están limitadas por columnas de altura 2 en ambos extremos: `2 + 1 + 2 = 5`.
 
-**Detalle por posición** para `[3,0,2,0,4]`:
+Detalle por posición para `[3,0,2,0,4]`:
 
 | Posición | Altura | Máximo izquierda | Máximo derecha | Agua |
 |---|---:|---:|---:|---:|
